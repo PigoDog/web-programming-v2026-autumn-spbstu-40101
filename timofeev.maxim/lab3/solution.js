@@ -4,7 +4,7 @@ export function removeDuplicates(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     const value = arr[i];
-    const key = typeof value + ':' + value;
+    const key = `${typeof value}:${value}`;
     if (!seen[key]) {
       seen[key] = true;
       result.push(value);
