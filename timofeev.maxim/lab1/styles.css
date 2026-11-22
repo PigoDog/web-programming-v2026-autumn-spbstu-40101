@@ -1,20 +1,19 @@
-
 * {
   box-sizing: border-box;
 }
- 
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 24px;
 }
- 
+
 .reg-form {
   width: 400px;
   padding: 8px;
   background-color: #f5f5f5;
 }
- 
+
 .reg-input {
   display: block;
   width: 100%;
@@ -24,11 +23,11 @@ body {
   background-color: #fff;
   font-size: 16px;
 }
- 
+
 .reg-input::placeholder {
   color: #777;
 }
- 
+
 .reg-button {
   display: block;
   width: 100%;
@@ -39,8 +38,7 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
- 
+
 .reg-button:hover {
   background-color: #417ffb;
 }
- 
