@@ -1,10 +1,11 @@
 function isLetter(ch) {
   const code = ch.charCodeAt(0);
   return (
-    (code >= 65 && code <= 90) ||   // A-Z
-    (code >= 97 && code <= 122) ||  // a-z
+    (code >= 65 && code <= 90) || // A-Z
+    (code >= 97 && code <= 122) || // a-z
     (code >= 1040 && code <= 1103) || // А-я
-    code === 1025 || code === 1105  // Ё, ё
+    code === 1025 ||
+    code === 1105 // Ё, ё
   );
 }
 
@@ -14,7 +15,7 @@ function isDigit(ch) {
 }
 
 function analyzieString(str) {
-  const result = { letters: 0, digits: 0, spaces: 0, other: 0 };
+  const result = {letters: 0, digits: 0, spaces: 0, other: 0};
 
   for (let i = 0; i < str.length; i++) {
     const ch = str[i];
